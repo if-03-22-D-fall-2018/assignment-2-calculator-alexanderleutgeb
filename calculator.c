@@ -4,16 +4,16 @@
 
 
 int GetFirstOperand(){
-  double* firstOperand;
+  double firstOperand;
   printf("First Operand: ");
-  scanf("%lf\n", firstOperand );
+  scanf("%lf\n", &firstOperand );
   return firstOperand;
 }
 
 int GetSecondOperand(){
-  double* secondOperand;
+  double secondOperand;
   printf("Second Operand: ");
-  scanf("%lf\n", secondOperand);
+  scanf("%lf\n", &secondOperand);
   return secondOperand;
 }
 void AddOperands(){
