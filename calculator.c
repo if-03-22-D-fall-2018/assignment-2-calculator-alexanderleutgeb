@@ -1,43 +1,53 @@
 #include <stdio.h>
 
-void AddOperands(){
-  GetFirstOperand();
-  GetSecondOperand();
-  int result;
-  result = firstOperand+secondOperand
-  printf("Result: %lf\n", result);
-}
-void SubOperands(){
-  GetFirstOperand();
-  GetSecondOperand();
-  int result;
-  result = firstOperand-secondOperand
-  printf("Result: %lf\n", result);
-}
-void MultiplyOperands(){
-  GetFirstOperand();
-  GetSecondOperand();
-  int result;
-  result = firstOperand*secondOperand
-  printf("Result: %lf\n", result);
-}
-void DivideOperands(){
-  GetFirstOperand();
-  GetSecondOperand();
-  int result;
-  result = firstOperand/secondOperand
-  printf("Result: %lf\n", result);
-}
-int GetFirstOperand(){
-  double firstOperand;
 
+
+
+int GetFirstOperand(){
+  double* firstOperand;
+  printf("First Operand: ");
+  scanf("%lf\n", firstOperand );
   return firstOperand;
 }
+
 int GetSecondOperand(){
-  double secondOperand;
-  
+  double* secondOperand;
+  printf("Second Operand: ");
+  scanf("%lf\n", secondOperand);
   return secondOperand;
 }
+void AddOperands(){
+  double firstOperand = GetFirstOperand();
+  double secondOperand = GetSecondOperand();
+  double result;
+  result = firstOperand+secondOperand;
+  printf("Result: %lf\n", result);
+}
+
+void SubOperands(){
+  double firstOperand = GetFirstOperand();
+  double secondOperand = GetSecondOperand();
+  double result;
+  result = firstOperand-secondOperand;
+  printf("Result: %lf\n", result);
+}
+
+void MultiplyOperands(){
+  double firstOperand = GetFirstOperand();
+  double secondOperand = GetSecondOperand();
+  double result;
+  result = firstOperand*secondOperand;
+  printf("Result: %lf\n", result);
+}
+
+void DivideOperands(){
+  double firstOperand = GetFirstOperand();
+  double secondOperand = GetSecondOperand();
+  double result;
+  result = firstOperand/secondOperand;
+  printf("Result: %lf\n", result);
+}
+
 int main(int argc, char const *argv[])
 {
   printf("Choose one of the following operations: ");
