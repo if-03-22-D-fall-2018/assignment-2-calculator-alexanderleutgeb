@@ -2,7 +2,6 @@
 
 
 
-
 int GetFirstOperand(){
   double firstOperand;
   printf("First Operand: ");
@@ -50,13 +49,12 @@ void DivideOperands(){
 
 int main(int argc, char const *argv[])
 {
-  printf("Choose one of the following operations: ");
+  printf("Choose one of the following operations: \n");
   printf("Add(1)\n");
   printf("Subtract(2)\n");
   printf("Multiplay(3)\n");
   printf("Divide(4)\n");
   printf("Stop programm(-1)\n");
-  printf("Enter your Choice:\n");
 
   int type_of_operation;
   printf("Enter yout choice: ");
